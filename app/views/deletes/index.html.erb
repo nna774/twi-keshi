@@ -2,6 +2,8 @@
 
 <h1>Deletes</h1>
 
+<%= page_entries_info @deletes %>
+
 <table>
   <thead>
     <tr>
@@ -22,3 +24,5 @@
 <br>
 
 <%= link_to 'New Delete', new_delete_path %>
+
+<%= paginate @deletes %>

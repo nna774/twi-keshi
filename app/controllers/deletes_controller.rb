@@ -4,7 +4,7 @@ class DeletesController < ApplicationController
   # GET /deletes
   # GET /deletes.json
   def index
-    @deletes = Delete.all
+    @deletes = Delete.page(params[:page])
     
   end
 
