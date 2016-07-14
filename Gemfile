@@ -46,3 +46,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'mongoid', github: 'mongodb/mongoid'
+gem 'pry'

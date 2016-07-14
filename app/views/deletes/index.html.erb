@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Deletes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @deletes.each do |delete| %>
+      <tr>
+        <td><%= delete.tweet ? delete.tweet.text : 'not saved' %></td>
+        <td><%= link_to 'Show', delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Delete', new_delete_path %>

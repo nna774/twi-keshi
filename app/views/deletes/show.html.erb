@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+<p><%= @delete.tweet.user[:name] %></p>
+<p><%= @delete.tweet.user[:screen_name] %></p>
+<p><%= @delete.tweet.text %></p?
+<%= link_to 'Edit', edit_delete_path(@delete) %> |
+<%= link_to 'Back', deletes_path %>
+<%= debug(@delete) %>

@@ -1,0 +1,17 @@
+<%= form_for(delete) do |f| %>
+  <% if delete.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(delete.errors.count, "error") %> prohibited this delete from being saved:</h2>
+
+      <ul>
+      <% delete.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
